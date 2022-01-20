@@ -1,0 +1,70 @@
+<h1 style="font-size: 3em; font-weight: 400; color: Tomato">
+  2022 Reading Challenge
+</h1>
+<p>Challenge youreslf to read more books this year.</p>
+
+<br />
+
+<form>
+  <span>I want to read </span>
+  <input type="text" name="total" id="total" placeholder="12" />
+  <span> books this year.</span>
+</form>
+
+<br />
+
+<div>Progress</div>
+
+<br />
+<br />
+
+<div>
+  <span
+    style="font-size: 1.2em; cursor: pointer"
+    (click)="expandMyReadingList()"
+    >My Reading List <i class="fas fa-chevron-down"></i
+  ></span>
+  <ul>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+  </ul>
+</div>
+
+<br />
+
+<div>
+  <div style="display: flex">
+    <div
+      style="margin-right: 32px; cursor: pointer"
+      (click)="filterBooks('Not started')"
+    >
+      Not started
+    </div>
+    <div
+      style="margin-right: 32px; cursor: pointer"
+      (click)="filterBooks('Started')"
+    >
+      Started
+    </div>
+    <div style="cursor: pointer" (click)="filterBooks('Finished')">
+      Finished
+    </div>
+  </div>
+  <ul>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+    <li>Book ***</li>
+  </ul>
+</div>
